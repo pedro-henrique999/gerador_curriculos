@@ -1,0 +1,207 @@
+.totalidade{
+    background-color: #BDA7C2 ;
+}
+.logotipo {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.logotipo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.logotipo h1 {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #9a69bf;
+    color: white;
+    padding: 15px 30px;
+    border: 5px double #000;
+    border-radius: 50px;
+    display: inline-block;
+}
+.conteiner{
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+.dadosPessoais{
+    margin-bottom: 30px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #9a69bf;
+}
+.dadosPessoais h3{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #9a69bf;
+    padding-bottom: 10px;
+}
+.form{
+    margin-bottom: 20px;
+}
+.form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"],
+.form input[type="month"],
+.form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    border-color: #9a69bf;
+}
+.form textarea{
+    resize:vertical;
+    min-height: 80px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.colx{
+    flex:1;
+    min-width: 200px;
+}
+.experiencia-item,
+.formacao-item,
+.habilidade-item{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    position: relative;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cabecalho h3{
+    margin: 0;
+    color: #333;
+font-size: 1.4em;
+}
+button[type="submit"]{
+    background: #28a745;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover{
+    background: #218838;
+}
+.btnremover{
+    background: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+.btnremover:hover{
+    background: #c82333;
+}
+.habilidade-input {
+    display: flex;
+    gap: 10px;
+}
+.habilidade-input input{
+    flex: 1;
+}
+@media(max-width: 768px){
+    .conteiner{
+        margin: 10px;
+        padding: 20px;
+    }
+    .logotipo h1{
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .colx{
+        min-width: 100%;
+    }
+    .cabecalho{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .botao,
+    .btn-adicionar{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .logotipo h1{
+        font-size: 1.2em;
+        padding: 8px 15px;
+    }
+    .conteiner{
+        padding: 15px;
+    }
+    .dadosPessoais{
+        padding: 15px;
+    }
+    .form input,
+    .form textarea{
+        padding: 10px;
+    }
+}
+.experiencia-item:hover,
+.formacao-item:hover,
+.habilidade-item:hover{
+    border-color: #9a69bf;
+    box-shadow: 0 2px 8px #9a69bf;
+    transition: all 0.3s ease;
+}
+div[style*="text-align: center"]{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid  #e9ecef;
+::placeholder{
+    color: #6c757d;
+    opacity: 0.7;
+}
+.form input:required,
+.form textarea:required{
+    border-left: 3px solid #28a745;
+}
